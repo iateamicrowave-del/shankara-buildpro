@@ -5,45 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shankara Buildpro – Kundapura</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 </head>
-
 <body>
 
-    <header>
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/919008864944" target="_blank" class="whatsapp-float">
+        <span class="material-icons-outlined">whatsapp</span>
+    </a>
+
+    <header class="navbar">
         <div class="logo">Shankara Buildpro</div>
         <nav>
+            <a href="#hero">Home</a>
             <a href="#about">About</a>
+            <a href="#products">Products</a>
             <a href="#gallery">Gallery</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <!-- Animated Worker -->
-    <div class="worker-container">
-        <div class="worker">
-            <div class="body"></div>
-            <div class="bag"></div>
-        </div>
-    </div>
+    <!-- Hero with overlay + parallax -->
+    <section id="hero" class="hero section" data-animate="fade-up">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Everything You Need To Build Better.</h1>
+                <p>Premium building materials, hardware, plumbing, electricals and more – right here in Koteshwara, Kundapura.</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn primary">View Products</a>
+                    <a href="#contact" class="btn secondary">Get Directions</a>
+                </div>
+                <div class="hero-tags">
+                    <span>Steel</span>
+                    <span>Cement</span>
+                    <span>Tiles</span>
+                    <span>Plumbing</span>
+                    <span>Electricals</span>
+                </div>
+            </div>
 
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Your Trusted Building Materials Partner</h1>
-            <p>Located in Koteshwara, Kundapura – Quality products for every construction need.</p>
+            <!-- Animated worker -->
+            <div class="worker-wrapper">
+                <div class="worker">
+                    <div class="worker-helmet"></div>
+                    <div class="worker-body"></div>
+                    <div class="worker-arm-left"></div>
+                    <div class="worker-arm-right"></div>
+                    <div class="worker-block"></div>
+                    <div class="worker-ground"></div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="about" class="about">
-        <h2>About Us</h2>
-        <p>
-            Shankara Buildpro is your one‑stop destination for premium building materials, 
-            hardware, plumbing, electricals, tiles, and construction essentials. 
-            We deliver reliability, quality, and trusted service to customers across Kundapura.
+    <!-- Why choose us -->
+    <section id="about" class="about section" data-animate="fade-up">
+        <h2>Why Choose Shankara Buildpro?</h2>
+        <p class="about-intro">
+            We bring together trusted brands, expert guidance, and reliable service so your project never has to slow down.
         </p>
+        <div class="about-grid">
+            <div class="card">
+                <span class="material-icons-outlined icon">verified</span>
+                <h3>Trusted Quality</h3>
+                <p>Only branded and certified materials for long‑lasting, safe construction.</p>
+            </div>
+            <div class="card">
+                <span class="material-icons-outlined icon">local_shipping</span>
+                <h3>On‑time Supply</h3>
+                <p>Fast and reliable delivery so your site work continues without delay.</p>
+            </div>
+            <div class="card">
+                <span class="material-icons-outlined icon">support_agent</span>
+                <h3>Expert Guidance</h3>
+                <p>Friendly staff to help you choose the right products for your needs.</p>
+            </div>
+            <div class="card">
+                <span class="material-icons-outlined icon">storefront</span>
+                <h3>One‑Stop Store</h3>
+                <p>From foundation to finishing – everything under one roof.</p>
+            </div>
+        </div>
     </section>
 
-    <section id="gallery" class="gallery">
-        <h2>Store Gallery</h2>
+    <!-- Product slider -->
+    <section id="products" class="products section" data-animate="fade-up">
+        <h2>Featured Product Categories</h2>
+        <div class="slider">
+            <div class="slider-track">
+                <div class="slide">
+                    <h3>Cement & Steel</h3>
+                    <p>High‑strength cement and TMT bars for strong, durable structures.</p>
+                </div>
+                <div class="slide">
+                    <h3>Plumbing</h3>
+                    <p>Pipes, fittings, tanks, and accessories for leak‑free water systems.</p>
+                </div>
+                <div class="slide">
+                    <h3>Electricals</h3>
+                    <p>Wires, switches, lights, and panels from trusted brands.</p>
+                </div>
+                <div class="slide">
+                    <h3>Tiles & Sanitary</h3>
+                    <p>Floor tiles, wall tiles, sanitaryware, and bathroom fittings.</p>
+                </div>
+                <div class="slide">
+                    <h3>Hardware & Tools</h3>
+                    <p>Locks, hinges, fasteners, and tools for every kind of work.</p>
+                </div>
+            </div>
+            <div class="slider-dots"></div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="gallery section" data-animate="fade-up">
+        <h2>Store & Product Gallery</h2>
         <div class="grid">
             <img src="img1.jpg" alt="Store Image 1">
             <img src="img2.jpg" alt="Store Image 2">
@@ -53,18 +132,51 @@
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <h2>Contact & Location</h2>
-        <p><strong>Address:</strong> Door No. 330/2, Opp. Rajalakshmi Service Station, NH 66, Koteshwara Village, Kundapura, Karnataka 576222</p>
-        <p><strong>Phone:</strong> +91 90088 64944</p>
-        <p><strong>Hours:</strong> 08:30 AM – 08:30 PM</p>
-
-        <a class="map-btn" href="https://www.google.com/maps" target="_blank">View on Google Maps</a>
+    <!-- Contact -->
+    <section id="contact" class="contact section" data-animate="fade-up">
+        <h2>Visit or Contact Us</h2>
+        <div class="contact-grid">
+            <div class="contact-card">
+                <span class="material-icons-outlined icon">place</span>
+                <h3>Address</h3>
+                <p>Door No. 330/2, Opp. Rajalakshmi Service Station,<br>NH 66, Koteshwara Village,<br>Kundapura, Karnataka 576222</p>
+            </div>
+            <div class="contact-card">
+                <span class="material-icons-outlined icon">call</span>
+                <h3>Phone</h3>
+                <p><a href="tel:+919008864944">+91 90088 64944</a></p>
+                <p><a href="https://wa.me/919008864944" target="_blank">Chat on WhatsApp</a></p>
+            </div>
+            <div class="contact-card">
+                <span class="material-icons-outlined icon">schedule</span>
+                <h3>Working Hours</h3>
+                <p>Every day: 08:30 AM – 08:30 PM</p>
+            </div>
+        </div>
+        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=Shankara+Buildpro+Kundapura" target="_blank">
+            <span class="material-icons-outlined">map</span>
+            View on Google Maps
+        </a>
     </section>
 
     <footer>
-        © 2026 Shankara Buildpro – All Rights Reserved
+        <div class="footer-top">
+            <div class="footer-brand">
+                <h3>Shankara Buildpro</h3>
+                <p>Reliable partner for all your construction and renovation needs in Kundapura.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Connect</h4>
+                <a href="https://wa.me/919008864944" target="_blank">WhatsApp</a>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2026 Shankara Buildpro – All Rights Reserved
+        </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
